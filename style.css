@@ -1,0 +1,616 @@
+#linha{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width: 300px;
+    font-size: 20px;
+}
+
+    .parallax {
+
+        background-image: url("assets/images/01\ home.png");
+    
+        /* Set a specific height */
+        min-height: 700px;
+        width: 100%;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .parallax1 {
+    
+        background-image: url("assets/images/01\ home.png");
+        width: 100%;
+        /* Set a specific height */
+        min-height: 700px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .parallax2 {
+    
+        background-image: url("assets/images/01\ home.png");
+        width: 100%;
+        /* Set a specific height */
+        min-height: 700px;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .parallax3 {
+    
+        background-image: url("assets/images/02\ home.png");
+        width: 100%;
+        /* Set a specific height */
+        min-height: 700px;
+        background-attachment: fixed;
+        /* Create the parallax scrolling effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .parallax7 {
+    
+        background-image: url("assets/images/01\ serv.png");
+        width: 100%;
+        /* Set a specific height */
+        min-height: 550px;
+        background-attachment: fixed;
+        /* Create the parallax scrolling effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .parallax4 {
+    
+        background-image: url("assets/images/01.png");
+        filter: grayscale(100%);
+        width: 100%;
+        /* Set a specific height */
+        min-height: 320px;
+        background-attachment: fixed;
+        /* Create the parallax scrolling effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax8 {
+    
+        background-image: url("assets/images/portfolio/01.png");
+        width: 100%;
+        /* Set a specific height */
+        min-height: 320px;
+        background-attachment: fixed;
+        /* Create the parallax scrolling effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+[data-anima]{
+    opacity: 0;
+    transition: 1s;  
+}
+[data-anima="esquerda"]{
+    transform: translate3d(-50px,0,0);
+
+}
+[data-anima="direita"]{
+    transform: translate3d(50px,0,0);
+    
+}
+[data-anima="centro"]{
+    transform: translate3d(0,50px,0);
+    
+}
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+nav.navbar.shrink {
+    height: 70px;
+  }
+  nav.shrink .navbar-brand img{
+    width: 60px;
+  }
+
+  .fundo-depoimento {
+
+    background-image: url("assets/images/03.png");
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+    .estilolink {
+    font-size: 18px;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to right, #eaaa2b, #eaaa2b 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 700ms ease;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+    .estilolink:hover {
+      background-position: 0 100%;
+    }
+
+    .current{
+        background-color: #eaaa2b;
+        font-size: 18px;
+        overflow: hidden;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 700ms ease;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration-color: #eaaa2b;
+    }
+
+  /* Style the buttons */
+  .portfolio-menu {
+    text-align: center;
+  }
+
+  .portfolio-menu ul li{
+      display: inline-block;
+      margin: 0;
+      list-style: none;
+      padding: 10px 15px;
+      border: 1px, solid;
+      cursor: pointer;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+  }
+
+  .portfolio-menu ul li:hover{
+      border-radius: 20px;
+      background: #ddd;
+      color: #2d2d2d;
+  }
+
+  .portfolio-item{
+      width:100%;
+  }
+
+  .portfolio-item .item{
+    float: left;
+}
+
+li.active{
+    border-radius: 20px;
+    background-color: #eaaa2b;
+    color: #2d2d2d;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    background-color: black;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .item:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family:'Slate Regular';
+    opacity:100%;
+    
+  }
+
+  .text a{
+    background-color: #eaaa2b;
+    border-radius: 7px;
+  }
+
+  .textcima {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family:'Slate Regular';
+  }
+
+  form input{
+    margin: 0 auto;
+	padding: 10px;
+	border: none;
+    border-color: #2d2d2d;
+    background-color: #F3F4F6;
+	margin-bottom: 10px;
+	border-radius: 15px;
+  }
+
+  form textarea{
+    border: none;
+    border-color: #2d2d2d;
+    background-color: #F3F4F6;
+	margin-bottom: 10px;
+	border-radius: 15px;
+    height: 100px
+  }
+
+
+  .parallax5{
+    background-image: url("assets/images/parceiro.png");
+    filter: grayscale(70%);
+    
+    /* Set a specific height */
+    min-height: 800 px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #2d2d2d;
+    color: white;
+    height: 250px;
+  }
+
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 5px;
+    right: 5px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.parallax6 {
+
+    background-image: url("assets/images/trabalhe\ conosco.jpg");
+    filter: grayscale(0);
+    
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 480px){
+    .margem{
+        margin-left: 0px;
+        margin-top: -300px;
+    }
+    .margem button{
+        margin-bottom: 10px;
+    }
+   }
+
+   @media(min-width: 768px){
+       .margem{
+           margin-left: -90px;
+       }
+   }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    /*background-color: #fefefe;*/
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.6s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body {padding: 2px 16px;}
+
+figure, figure img{
+    width: 150px;
+    height: 100px;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Slate Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Regular'), url('fonts/SlateRg.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Condensed'), url('fonts/SlateRgCn.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Italic'), url('fonts/SlateRgIt.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Light'), url('fonts/SlateLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Condensed Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Condensed Light'), url('fonts/SlateLightCn.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Light Italic'), url('fonts/SlateLightIt.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Book'), url('fonts/SlateBook.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Condensed Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Condensed Book'), url('fonts/SlateBookCn.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Book Italic'), url('fonts/SlateBookIt.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Condensed Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Condensed Medium'), url('fonts/SlateMedCn.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Medium'), url('fonts/SlateMedium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Medium Italic'), url('fonts/SlateMedIt.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Bold'), url('fonts/SlateBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Condensed Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Condensed Bold'), url('fonts/SlateBoldCn.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Slate Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slate Bold Italic'), url('fonts/SlateBoldIt.woff') format('woff');
+    }
